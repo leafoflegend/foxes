@@ -5,7 +5,7 @@ app.use(express.json());
 
 app.post('/reverse', (req, res) => {
   res.send({
-    message: req.body.message.split(''),
+    message: req.body.message.split('').reverse().join(''),
   });
 });
 
